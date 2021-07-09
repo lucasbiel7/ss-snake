@@ -2,8 +2,10 @@ package com.battle.snake.controller;
 
 import com.battle.snake.model.GameInformation;
 import io.micronaut.http.HttpResponse;
+import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.Produces;
 import lombok.RequiredArgsConstructor;
 
 import javax.inject.Singleton;
@@ -14,16 +16,17 @@ import javax.inject.Singleton;
 public class SnakeController {
 
     @Get
+    @Produces(MediaType.APPLICATION_JSON)
     public HttpResponse<GameInformation> info(){
         return HttpResponse.ok(
-//                GameInformation.builder()
-//                .author("Flávim do baile da vilarinho")
-//                .version("0.1")
-//                .apiVersion("1")
-//                .color("#952553")
-//                .head("beluga")
-//                .tail("default")
-//                .build()
+                GameInformation.builder()
+                .author("Flávim do baile da vilarinho")
+                .version("0.1")
+                .apiVersion("1")
+                .color("#952553")
+                .head("beluga")
+                .tail("default")
+                .build()
         );
     }
 }
