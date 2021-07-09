@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.battle.snake
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, http-client, java, java-application, junit, log4j2, lombok, maven, mockito, netty-server, openapi, readme, shade, yaml]
