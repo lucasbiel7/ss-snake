@@ -13,6 +13,6 @@ public class PingController {
 
     @Get
     public HttpResponse<String> ping(){
-        return HttpResponse.ok("Flávim javeiro.");
+        return HttpResponse.ok("Sombrinha Deus do JAVA.");
     }
 }
