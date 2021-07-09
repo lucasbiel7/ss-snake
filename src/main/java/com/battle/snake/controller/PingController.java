@@ -14,8 +14,7 @@ import lombok.RequiredArgsConstructor;
 public class PingController {
 
     @Get
-    @Produces(MediaType.TEXT_HTML)
     public HttpResponse<String> ping(){
-        return HttpResponse.ok("<b>Flávim javeiro.</b>");
+        return HttpResponse.ok("Flávim javeiro.");
     }
 }
