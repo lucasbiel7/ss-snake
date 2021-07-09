@@ -12,7 +12,7 @@ import lombok.Setter;
 @Builder
 public class GameInformation {
 
-    @JsonAlias("apiversion")
+//    @JsonAlias("apiversion")
     private String apiVersion;
 
     private String author;

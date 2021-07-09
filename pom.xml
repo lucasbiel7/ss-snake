@@ -10,14 +10,14 @@
   <parent>
     <groupId>io.micronaut</groupId>
     <artifactId>micronaut-parent</artifactId>
-    <version>3.0.0-M2</version>
+    <version>2.5.8</version>
   </parent>
 
   <properties>
     <packaging>jar</packaging>
     <jdk.version>11</jdk.version>
     <release.version>11</release.version>
-    <micronaut.version>3.0.0-M2</micronaut.version>
+    <micronaut.version>2.5.8</micronaut.version>
     <exec.mainClass>com.battle.snake.Application</exec.mainClass>
     <micronaut.runtime>netty</micronaut.runtime>
   </properties>
